@@ -4,14 +4,18 @@
 
   <mat-form-field>
 
-    <input matInput type="text" name="title" placeholder="enter title" ngModel required minlength="3"
+    <input matInput type="text" name="title" placeholder="enter title"
+           [ngModel]="post.title"
+           required minlength="3"
            #title="ngModel">
     <mat-error *ngIf="title.invalid">Title is a required field </mat-error>
 
   </mat-form-field>
   <mat-form-field>
 
-    <textarea matInput rows="4" name="content" placeholder="enter content" ngModel required minlength="5"
+    <textarea matInput rows="4" name="content" placeholder="enter content"
+              [ngModel]="post.content"
+              required minlength="5"
               #content="ngModel"></textarea>
     <mat-error *ngIf="content.invalid">content is a required field </mat-error>
   </mat-form-field>

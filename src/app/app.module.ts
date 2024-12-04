@@ -14,8 +14,12 @@ import {FormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { PostListComponent } from './posts/post-list/post-list.component';
+import {PostListComponent} from './posts/post-list/post-list.component';
 import {HttpClientModule} from "@angular/common/http";
+import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
+import {AppRoutingModule} from "./app-routing.module";
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +40,11 @@ import {HttpClientModule} from "@angular/common/http";
     MatFormFieldModule,
     MatExpansionModule,
     BrowserAnimationsModule,
-    MatInputModule
+    MatInputModule,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
