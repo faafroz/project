@@ -18,6 +18,8 @@ import {PostListComponent} from './posts/post-list/post-list.component';
 import {HttpClientModule} from "@angular/common/http";
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
+import { LoginComponent } from './auth/login/login.component';
+import { SignupComponent } from './auth/signup/signup.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import {AppRoutingModule} from "./app-routing.module";
     CreatePostComponent,
     CreatePostComponent,
     PostListComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
