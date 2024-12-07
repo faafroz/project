@@ -3,19 +3,18 @@
   "version": "1.0.0",
   "type": "module",
   "main": "server.js",
+  "description": "node proj",
   "scripts": {
     "start": "node server.js",
     "start-watch": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "fareeha afroz",
   "license": "ISC",
-  "description": "node proj",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
-    "debug": "^4.3.7",
+    "debug": "^4.4.0",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.11.0",

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {NgForm} from "@angular/forms";
 import {AuthService} from "../auth.service";
 
@@ -12,10 +12,14 @@ export class SignupComponent {
 
   constructor(private authService: AuthService) {
   }
-  onSignup(form:NgForm){
+
+  onSignup(form: NgForm) {
     if (form.invalid) {
       return;
     }
+
     this.authService.createUser(form.value.email, form.value.password);
   }
+
+
 }
