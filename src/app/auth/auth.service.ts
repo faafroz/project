@@ -10,7 +10,10 @@ export class AuthService {
   private isAuthenticated: boolean = false;
   private authStatusListener = new Subject<boolean>();
   private token: string | null = null;
-  private tokenTimer: ReturnType<typeof setTimeout> =0; // Allowing null values for initialization
+  private tokenTimer: ReturnType<typeof setTimeout> | null = null;
+
+
+  // Allowing null values for initialization
 
   constructor(private http: HttpClient, private router: Router) {
   }
