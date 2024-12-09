@@ -12,7 +12,7 @@ export class JokeService {
 
   getJoke() {
     // Use the `type=twopart` query parameter to ensure only two-part jokes are fetched
-    this.http.get<any>("https://v2.jokeapi.dev/joke/Any?type=twopart").subscribe((payLoad) => {
+    this.http.get<any>("https://jokeapi.dev/joke/Any?type=twoparv2t").subscribe((payLoad) => {
       this.joke = {
         type: payLoad.type,
         setup: payLoad.setup,
