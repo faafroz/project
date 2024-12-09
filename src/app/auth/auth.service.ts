@@ -12,7 +12,6 @@ export class AuthService {
   private token: string | null = null;
   private tokenTimer: ReturnType<typeof setTimeout> | null = null;
 
-
   // Allowing null values for initialization
 
   constructor(private http: HttpClient, private router: Router) {
